@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Tute you</string>
+
+    <string-array name="Classes">
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+    </string-array>
+
+    <string-array name="PlaceToStudy">
+        <item>At home</item>
+        <item>Coaching centre</item>
+    </string-array>
+
+    <string-array name="Subjects">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>Biology</item>
+        <item>Computer</item>
+    </string-array>
+
+
+    <string-array name="Qualifications">
+        <item>Bachelors</item>
+        <item>Masters</item>
+        <item>Ph.D</item>
+
+    </string-array>
+
+    <string-array name="Wages_paid">
+        <item>Per Month</item>
+        <item>Per Week</item>
+        <item>Per Hour</item>
+    </string-array>
+    <string name="title_activity_student_home">StudentHome</string>
+
+</resources>

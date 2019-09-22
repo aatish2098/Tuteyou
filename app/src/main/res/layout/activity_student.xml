@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aatish.tuteyou.StudentActivity">
+
+    <Spinner
+        android:id="@+id/Class"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@+id/Where"
+        android:layout_alignEnd="@+id/Dp_read" />
+
+    <Spinner
+        android:id="@+id/Place"
+        android:layout_width="179dp"
+        android:layout_height="23dp"
+        android:layout_alignBottom="@+id/ClassIn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
+
+    <TextView
+        android:id="@+id/ClassIn"
+        android:layout_width="174dp"
+        android:layout_height="30dp"
+
+        android:layout_alignStart="@+id/Where"
+        android:layout_below="@+id/Where"
+        android:layout_marginTop="27dp"
+        android:text="I am studying in" />
+
+    <EditText
+        android:id="@+id/Teacher_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/Place"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/Where"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Teacher_Name"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/StudentNext"
+        android:text="I would like to study at" />
+
+    <TextView
+        android:id="@+id/Dp_read"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Tap on the image below to upload profile picture" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/student_profile"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_above="@+id/Teacher_Name"
+        android:layout_marginBottom="65dp"
+        android:layout_toEndOf="@+id/Where"
+        android:src="@drawable/pro_stu"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <Button
+        android:id="@+id/StudentNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Done"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/student_profile"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+</RelativeLayout>

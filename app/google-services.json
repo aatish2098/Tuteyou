@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "410418934122",
+    "firebase_url": "https://teachme-addc8.firebaseio.com",
+    "project_id": "teachme-addc8",
+    "storage_bucket": "teachme-addc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410418934122:android:5e2a117913792139",
+        "android_client_info": {
+          "package_name": "com.example.aatish.tuteyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410418934122-tp0amvf0crot4jhc00cb6ug7jpn2t22n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aatish.tuteyou",
+            "certificate_hash": "81f8790ea7ce32549d7c0914677e685a30ca7717"
+          }
+        },
+        {
+          "client_id": "410418934122-3jans30khco13ngqsv8mpukbfm74elc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD61tQ9YjbpEUlL4fh8R7wNtnQBiXRiGfg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410418934122-3jans30khco13ngqsv8mpukbfm74elc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

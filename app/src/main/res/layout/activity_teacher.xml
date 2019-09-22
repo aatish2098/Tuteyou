@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.aatish.tuteyou.TeacherActivity">
+
+
+        <TextView
+            android:id="@+id/Pro_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Tap on the icon below to upload profile picture" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pro_teacher"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/Money"
+            android:src="@drawable/pro_teacher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/Teacher_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pro_teacher"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/Sub_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/quali"
+            android:layout_below="@+id/quali"
+            android:layout_marginTop="23dp"
+            android:text="Teaches" />
+
+        <EditText
+            android:id="@+id/Mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Teacher_Name"
+            android:layout_below="@+id/Teacher_Name"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/quali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Mobile"
+            android:layout_below="@+id/Mobile"
+            android:layout_marginTop="20dp"
+            android:text="Qualtification" />
+
+        <TextView
+            android:id="@+id/Wage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Money"
+            android:layout_alignBottom="@+id/Money"
+            android:layout_alignStart="@+id/Sub_special"
+            android:text="Employment Cost" />
+
+        <Spinner
+            android:id="@+id/Quali"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Sub_special"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/Money"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Teaches"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="in Rupees"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/MoneyType"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Money"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ButtonSave" />
+
+        <Button
+            android:id="@+id/ButtonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Money"
+            android:layout_below="@+id/Money"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="73dp"
+            android:text="Done" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Teacher_Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/Teaches"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Quali"
+            android:layout_alignTop="@+id/Sub_special"
+            android:layout_marginStart="9dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
